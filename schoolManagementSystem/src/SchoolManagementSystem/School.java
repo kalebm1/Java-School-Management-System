@@ -49,6 +49,15 @@ public class School {
         totalMoneySpent+=MoneySpent;
     }
 
+    public double getAvgGpa(){
+        int count = 0;
+        double gpaSum = 0;
+        for (count = 0; count<students.size(); count++){
+            gpaSum+=students.get(count).getGrade();
+        }
+        return (gpaSum/count);
+    }
+
 
 
 }

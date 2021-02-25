@@ -16,9 +16,9 @@ public class schoolManagementSystem{
         teacherList.add(vanderhorn);
 
 
-        Student tamasha = new Student(1,"Tamasha",4);
-        Student rakshith = new Student(2,"Rakshith Vasudev",12);
-        Student rabbi = new Student(3,"Rabbi",5);
+        Student tamasha = new Student(1,"Tamasha",4.0);
+        Student rakshith = new Student(2,"Rakshith Vasudev",2.5);
+        Student rabbi = new Student(3,"Rabbi",3.0);
         List<Student> studentList = new ArrayList<>();
 
         studentList.add(tamasha);
@@ -27,8 +27,9 @@ public class schoolManagementSystem{
 
 
 
-
         School ghs = new School(teacherList,studentList);
+
+        System.out.println("AVG GPA: "+ghs.getAvgGpa());
 
         Teacher megan = new Teacher(6,"Megan", 900);
 

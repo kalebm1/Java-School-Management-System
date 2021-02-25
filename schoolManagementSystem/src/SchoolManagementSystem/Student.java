@@ -3,13 +3,13 @@ package SchoolManagementSystem;
 public class Student {
     private int id;
     private String name;
-    private int gpa;
+    private double gpa;
     private int feesPaid;
     private int totalFees;
 
 
 
-    public Student(int id, String name, int grade){
+    public Student(int id, String name, double grade){
         this.feesPaid = 0;
         this.totalFees = 30000;
         this.id = id;
@@ -19,7 +19,7 @@ public class Student {
     }
 
 
-    public void setGrade(int grade){
+    public void setGrade(double grade){
         this.gpa = grade;
     }
 
@@ -36,7 +36,7 @@ public class Student {
         return name;
     }
 
-    public int getGrade(){
+    public double getGrade(){
         return gpa;
     }
 
